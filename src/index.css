@@ -112,3 +112,70 @@
   font-size: 1.2em;
   font-style: italic;
 }
+
+.header{
+  position: fixed;
+  opacity: .5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.header:hover{
+  opacity: 1;
+}
+
+.header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header img {
+  height: 40px;
+}
+
+.header .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4eb87;
+  padding: 20px;
+  padding-bottom: 1%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+  font-style: italic;
+  gap: 10px;
+}
+
+.header .navigation {
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.header .navigation a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+  margin-right: 20vh;
+}
+
+.header .navigation a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000000;
+  transition: width 0.3s ease;
+}
+
+.header .navigation a:hover::before {
+  width: 100%;
+}

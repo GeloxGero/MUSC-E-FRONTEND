@@ -45,9 +45,9 @@ const DashHeader = () => {
     )
 
     const content = (
-        <header className="dash-header">
-            <div className="dash-header__container">
-                <Link to="/dash">
+        <header className="header">
+            <div className="container">
+                {/* <Link to="/dash">
                     <h1 className="dash-header__title">MUSC-E</h1>
                 </Link>
                 <div className="dash-header__nav">
@@ -55,7 +55,18 @@ const DashHeader = () => {
                     <a href="#">ABOUT</a>
                     <a href="#">PRODUCTS</a>
                     <a href="#">CONTACTS</a>
+                </div> */}
+                <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/349622438_205025309039704_4318455005088689078_n.png?stp=dst-png_p403x403&_nc_cat=101&ccb=1-7&_nc_sid=aee45a&_nc_eui2=AeHC8OJN8jBbBfAI6AFPiEnj4dkD4w52slHh2QPjDnayUZ61TmlJiinG9V5nk9oVmyuNrvm28f7pN5cfosA3Vp3m&_nc_ohc=oUd-1zEUdIsAX9lLZs0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdThqcoHkkMqGTSRy-9WPlE44iits2ruj_J27Gv2Lx3-Mg&oe=649A5CC1"/>
+                <div className="navigation">
+                    <Link><a>Home</a></Link>
+                    <Link><a>About Us</a></Link>
+                    <Link><a>Contact Us</a></Link>
+
+                    <Link><a class="cart-button"><i class="fas fa-shopping-cart"></i>CART</a></Link>
+                    <Link><a href="#" class="logout-button">Login</a></Link>
                 </div>
+                
+
             </div>
         </header>
     )
